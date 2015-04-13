@@ -39,8 +39,10 @@ exports.list = function(req, res) {
 					message: getErrorMessage(err)
 				});
 			else
+			{
 				console.log(data)
-				res.send(data);
+				res.json(data);
+			}
 		});
 	}
 	else{
